@@ -1,0 +1,68 @@
+<ion-view title="Rate a Car" id="page2">
+    <ion-content padding="true" style="background: url(img/QAcWGswrQdqJQnQmSiHa_car-background-images-6.jpg) no-repeat center;background-size:cover;" class="has-header">
+        <div style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center; height: 500px; width: 75%; margin-left: auto; margin-right: auto;">
+            <img id="carImg" onclick="openCam()" src="" width="100%" height="100%"/>
+        </div>
+        <div class="spacer" style="width: 300px; height: 13px;"></div>
+        <form id="rateACar-form2" class="list">
+            <button id="rateACar-button5" onclick="geoLocate()" class="button button-assertive  button-block">Get Location</button>
+            <label class="item item-input" id="rateACar-input4">
+                <span class="input-label">Make</span>
+                <input id="getMake" type="text" placeholder="">
+            </label>
+            <label class="item item-input" id="rateACar-input3">
+                <span class="input-label">Model</span>
+                <input id="getModel" type="text" placeholder="">
+            </label>
+            <label class="item item-input" id="rateACar-input2">
+                <span class="input-label">Car Type</span>
+                <input id="getType" type="text" placeholder="">
+            </label>
+            <label class="item item-select" id="rateACar-select1">
+                <span class="input-label">Performance</span>
+                <select id="getPerformance">
+                    <option>☆☆☆☆☆</option>
+                    <option>★☆☆☆☆</option>
+                    <option>★★☆☆☆</option>
+                    <option>★★★☆☆</option>
+                    <option>★★★★☆</option>
+                    <option>★★★★★</option>                    
+                </select>
+            </label>
+            <label class="item item-select" id="rateACar-select2">
+                <span class="input-label">Comfort</span>
+                <select id="getComfort">
+                    <option>☆☆☆☆☆</option>
+                    <option>★☆☆☆☆</option>
+                    <option>★★☆☆☆</option>
+                    <option>★★★☆☆</option>
+                    <option>★★★★☆</option>
+                    <option>★★★★★</option>
+                </select>
+            </label>
+            <label class="item item-select" id="rateACar-select3">
+                <span class="input-label">Value</span>
+                <select id="getValue">
+                    <option>☆☆☆☆☆</option>
+                    <option>★☆☆☆☆</option>
+                    <option>★★☆☆☆</option>
+                    <option>★★★☆☆</option>
+                    <option>★★★★☆</option>
+                    <option>★★★★★</option>
+                </select>
+            </label>
+            <label class="item item-select" id="rateACar-select4">
+                <span class="input-label">Overall</span>
+                <select id="getoverAll">
+                    <option>☆☆☆☆☆</option>
+                    <option>★☆☆☆☆</option>
+                    <option>★★☆☆☆</option>
+                    <option>★★★☆☆</option>
+                    <option>★★★★☆</option>
+                    <option>★★★★★</option>
+                </select>
+            </label>
+            <button id="rateACar-button3" onclick="buildObject()" style="font-weight:600;border-radius:15px 15px 15px 15px;" class="button button-assertive  button-block">Submit Rating</button>
+        </form>
+    </ion-content>
+</ion-view>
